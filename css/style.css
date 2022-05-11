@@ -1,0 +1,119 @@
+@import 'normalize.css';
+@import 'header.css';
+@import 'main-sec.css';
+@import 'season.css';
+@import 'collection.css';
+@import 'products.css';
+
+.gen-title {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.gen-title::after {
+  content: '';
+  width: 120px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+}
+
+.gen-card {
+  transition: 500ms;
+}
+
+.gen-card:hover {
+  transform: scale(1.05);
+}
+
+.gen-card__top {
+  width: 100%;
+  background: #191B1C;
+  padding: 55px 22px;
+}
+
+.gen-card__img {
+  width: 100%;
+}
+
+.gen-card__title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+  color: #FFFFFF;
+  margin: 25px 0 10px;
+}
+
+.gen-card__price {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: #D0D0D0;
+}
+
+.gen-btn {
+  border: 1px solid #FFFFFF;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(23/ 18);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 28px;
+  margin-top: 30px;
+  transition: 500ms;
+}
+
+.gen-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .gen-title {
+    font-size: 30px;
+    padding-bottom: 35px;
+  }
+
+  .gen-card__top {
+    padding: 45px 15px;
+  }
+
+  .gen-card__title {
+    font-size: 15px;
+    margin: 15px 0 10px;
+  }
+
+  .gen-card__price {
+    font-size: 14px;
+  }
+
+  .gen-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gen-title {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+}

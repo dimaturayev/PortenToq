@@ -1,0 +1,66 @@
+.collection {
+  display: flex;
+}
+
+.collection__left {
+  width: 40%;
+  background: url(../images/man2.svg) no-repeat top / cover;
+}
+
+.collection__right {
+  width: 60%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.collection__text {
+  width: 43%;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 80px 0 30px;
+}
+
+
+@media (max-width: 1600px) {
+  .collection__text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .collection__left {
+    width: 50%;
+  }
+
+  .collection__right {
+    width: 50%;
+		padding: 80px 0;
+  }
+
+  .collection__text {
+    margin: 50px 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collection__left {
+    display: none;
+  }
+
+  .collection__right {
+    width: 100%;
+		padding: 60px 0;
+  }
+
+	.collection__text {
+    width: 90%;
+  }
+}

@@ -1,0 +1,129 @@
+.season {
+  display: flex;
+}
+
+.season__left {
+  width: 60%;
+  background: #000000;
+  padding: 90px 0;
+}
+
+.season__wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 100px auto 0;
+}
+
+.season__card {
+  flex: 0 0 30%;
+}
+
+.season__right {
+  width: 40%;
+  background: url(../images/man11.svg) no-repeat 0 0 / cover;
+}
+
+.s-right__box {
+  margin-top: 484px;
+  text-align: center;
+}
+
+.s-right__title {
+  padding-bottom: 30px !important;
+}
+
+
+@media (max-width: 1200px) {
+  .season__left {
+    padding: 55px 0;
+  }
+
+  .season__wrapper {
+    margin-top: 70px;
+  }
+
+  .s-right__box {
+    margin-top: 370px;
+  }
+}
+
+@media (max-width: 992px) {
+  .season__left {
+    width: 50%;
+  }
+
+  .season__right {
+    width: 50%;
+  }
+
+  .season__card {
+    flex-basis: 45%;
+  }
+
+  .season__card:nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .season {
+    flex-wrap: wrap;
+  }
+
+  .season__left {
+    width: 100%;
+  }
+
+  .season__card {
+    flex-basis: 30%;
+  }
+
+  .season__card:nth-child(1) {
+    display: block;
+  }
+
+  .season__right {
+    width: 100%;
+  }
+
+  .s-right__box {
+    margin: 300px 0 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .season__left {
+    padding: 40px 0;
+  }
+
+  .season__wrapper {
+    margin-top: 40px;
+  }
+
+  .s-right__box {
+    margin-top: 200px;
+  }
+
+  .season__card {
+    flex-basis: 45%;
+  }
+
+  .season__card:nth-child(1) {
+    display: none;
+  }
+
+}
+
+/* @media (max-width: 425px) {
+  .season__wrapper {
+    justify-content: center;
+		flex-wrap: wrap;
+		row-gap: 25px;
+  }
+
+  .season__card {
+    flex-basis: 90%;
+  }
+} */
